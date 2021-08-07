@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Covid-19 Tracker</title>
+  </head>
+  <body>
+    <div class="navBar">
+      <div class="title">
+        <h1>Covid Tracker</h1>
+        <select class="selector" name="selectors" id="">
+          <option value="All">All</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <input
+          type="text"
+          name="countryName"
+          id="inputValue"
+          placeholder="Enter a Country Name"
+          value=""
+        />
+
+        <button class="btn">Click here</button>
+      </div>
+    </div>
+    <div class="chest"></div>
+    <div class="chart" style="width: 50%;">
+      <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
+    <div class="head"></div>
+  </body>
+  <script src="script.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"
+      integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</html>
